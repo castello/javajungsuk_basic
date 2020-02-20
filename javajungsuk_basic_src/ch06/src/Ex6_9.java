@@ -1,43 +1,37 @@
+class MyMath2 {
+	long a, b;
+
+	// 인스턴스 변수 a, b만을 잉요해서 작업하므로 매개변수가 필요없다.
+	long add()		{ return a + b; }  // a, b는 인스턴스 변수
+	long subtract() { return a - b; }
+	long multiply() { return a * b; }
+	double divide() { return a / b; }
+
+	// 인스턴스 변수와 관계없이 매개변수만으로 작업이 가능하다.
+	static long   add(long a, long b)		 { return a + b; }  // a, b는 지역변수
+	static long   subtract(long a, long b)   { return a - b; }
+	static long   multiply(long a, long b)   { return a * b; }
+	static double divide(long a, long b) { return a / (double)b; }
+	
+}
+
+
 class Ex6_9 {
 	public static void main(String args[]) {
-		MyMath2 mm = new MyMath2();
-		System.out.println("mm.add(3, 3) 결과:"    + mm.add(3,3));
-		System.out.println("mm.add(3L, 3) 결과: "  + mm.add(3L,3));
-		System.out.println("mm.add(3, 3L) 결과: "  + mm.add(3,3L));
-		System.out.println("mm.add(3L, 3L) 결과: " + mm.add(3L,3L));
+		// 클래스 메서드 호출. 인스턴스 생성없이 호출가능
+		System.out.println(MyMath2.add(200L, 100L));
+		System.out.println(MyMath2.subtract(200L, 100L));
+		System.out.println(MyMath2.multiply(200L, 100L));
+		System.out.println(MyMath2.divide(200L, 100L));
 
-		int[] a = {100, 200, 300};
-		System.out.println("mm.add(a) 결과: " + mm.add(a));
+		MyMath2 mm = new MyMath2(); // 인스턴스를 생성
+		mm.a = 200L;
+		mm.b = 100L;
+		// 인스턴스 메서드는 객체생성 후에만 호출이 가능함.
+		System.out.println(mm.add());
+		System.out.println(mm.subtract());
+		System.out.println(mm.multiply());
+		System.out.println(mm.divide());
    }
 }
 
-class MyMath2 {
-	int add(int a, int b) {
-		System.out.print("int add(int a, int b) - ");
-		return a+b;
-	}
-	
-	long add(int a, long b) {
-		System.out.print("long add(int a, long b) - ");
-		return a+b;
-	}
-	
-	long add(long a, int b) {
-		System.out.print("long add(long a, int b) - ");
-		return a+b;
-	}
-
-	long add(long a, long b) {
-		System.out.print("long add(long a, long b) - ");
-		return a+b;
-	}
-
-	int add(int[] a) {		// 배열의 모든 요소의 합을 결과로 돌려준다.
-		System.out.print("int add(int[] a) - ");
-		int result = 0;
-		for(int i=0; i < a.length;i++) 
-			result += a[i];
-		
-		return result;
-	}
-}

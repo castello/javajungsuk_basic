@@ -1,15 +1,21 @@
 class Ex6_14 {
-	static int[] arr = new int[10];
-
 	static {
-		for(int i=0;i<arr.length;i++) {
-			// 1과 10사이의 임의의 값을 배열 arr에 저장한다.
-			arr[i] = (int)(Math.random()*10) + 1;
-		}
+		System.out.println("static { }");
+	}
+
+	{
+		System.out.println("{ }");
+	}
+
+	public Ex6_14() {
+		System.out.println("생성자");
 	}
 
 	public static void main(String args[]) {
-		for(int i=0; i<arr.length;i++)
-			System.out.println("arr["+i+"] :" + arr[i]);
+		System.out.println("Ex6_14 bt = new Ex6_14(); ");
+		Ex6_14 bt = new Ex6_14();
+
+		System.out.println("Ex6_14 bt2 = new Ex6_14(); ");
+		Ex6_14 bt2 = new Ex6_14();
 	}
 }
