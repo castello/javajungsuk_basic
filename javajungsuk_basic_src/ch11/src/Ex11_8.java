@@ -4,7 +4,7 @@ class Ex11_8 {
 	public static void main(String[] args) { 
 		Integer[] arr = { 30, 50, 10, 40, 20 }; 
 
-		Arrays.sort(arr); // 기본 정렬기준 compareTo()로 정렬 
+		Arrays.sort(arr); // Integer가 가지고 있는 기본 정렬기준 compareTo()로 정렬 
 		System.out.println(Arrays.toString(arr));
 
 		// sort(Object[] objArr, Comparator c)
