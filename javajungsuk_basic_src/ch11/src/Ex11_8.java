@@ -20,7 +20,8 @@ class DescComp implements Comparator {
 
 		Integer i  = (Integer)o1;
 		Integer i2 = (Integer)o2;
-
+		
+		// return i2 - i; 또는 return i2.compareTo(i);도 가능
 		return i.compareTo(i2) * -1; // 기본 정렬인 compareTo()의 역순으로 정렬
 	}
 }
