@@ -1,14 +1,27 @@
-import java.util.*;
 
-class Ex11_8 {
-	public static void main(String[] args) {
-		Object[] objArr = {"1",new Integer(1),"2","2","3","3","4","4","4"};
-		Set set = new HashSet();
+import java.util.*; 
 
-		for(int i=0; i < objArr.length; i++) {
-			set.add(objArr[i]);	// HashSet¿¡ objArrÀÇ ¿ä¼ÒµéÀ» ÀúÀåÇÑ´Ù.
-		}
-      // HashSet¿¡ ÀúÀåµÈ ¿ä¼ÒµéÀ» Ãâ·ÂÇÑ´Ù.
-		System.out.println(set);	
+class Ex11_8 { 
+	public static void main(String[] args) { 
+		Integer[] arr = { 30, 50, 10, 40, 20 }; 
+
+		Arrays.sort(arr); // ê¸°ë³¸ ê¸°ì¤€ ì •ë ¬(Comparable)ìœ¼ë¡œ ì •ë ¬ 
+		System.out.println(Arrays.toString(arr));
+
+		// sort(Object[] objArr, Comparator c)
+		Arrays.sort(arr, new DescComp()); // DescCompì— êµ¬í˜„ëœ ì •ë ¬ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬
+		System.out.println(Arrays.toString(arr));
+	} // main
+}	
+
+class DescComp implements Comparator {
+	public int compare(Object o1, Object o2) {
+		if(!(o1 instanceof Integer && o2 instanceof Integer))
+			return -1; // Integerê°€ ì•„ë‹ˆë©´, ë¹„êµí•˜ì§€ ì•Šê³  -1 ë°˜í™˜
+
+		Integer i  = (Integer)o1;
+		Integer i2 = (Integer)o2;
+
+		return i.compareTo(i2) * -1; // ê¸°ë³¸ ì •ë ¬ì˜ ì—­ìˆœìœ¼ë¡œ ì •ë ¬
 	}
 }
