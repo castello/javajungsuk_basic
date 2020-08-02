@@ -7,10 +7,10 @@ class Ex11_16 {
 		map.put("asdf", "1111");
 		map.put("asdf", "1234");
 
-		Scanner s = new Scanner(System.in);	// È­¸éÀ¸·ÎºÎÅÍ ¶óÀÎ´ÜÀ§·Î ÀÔ·Â¹Ş´Â´Ù.
+		Scanner s = new Scanner(System.in);	// í™”ë©´ìœ¼ë¡œë¶€í„° ë¼ì¸ë‹¨ìœ„ë¡œ ì…ë ¥ë°›ëŠ”ë‹¤.
 
 		while(true) {
-			System.out.println("id¿Í password¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("idì™€ passwordë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			System.out.print("id :");
 			String id = s.nextLine().trim();
 
@@ -19,15 +19,16 @@ class Ex11_16 {
 			System.out.println();
 
 			if(!map.containsKey(id)) {
-				System.out.println("ÀÔ·ÂÇÏ½Å id´Â Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù." + " ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+				System.out.println("ì…ë ¥í•˜ì‹  idëŠ” ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤." + " ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 				continue;
+			} 
+			
+			if(!(map.get(id)).equals(password)) {
+				System.out.println("ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			} else {
-				if(!(map.get(id)).equals(password)) {
-				    System.out.println("ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-				} else {
-					 System.out.println("id¿Í ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ÇÕ´Ï´Ù.");									 break;
-				}
+				System.out.println("idì™€ ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•©ë‹ˆë‹¤.");
+				break;
 			}
 		} // while
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }
