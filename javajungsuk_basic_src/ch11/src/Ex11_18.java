@@ -9,9 +9,9 @@ class Ex11_18 {
 		for(int i=0; i < data.length; i++) {
 			if(map.containsKey(data[i])) {
 				Integer value = (Integer)map.get(data[i]);
-				map.put(data[i], new Integer(value.intValue() + 1));
+				map.put(data[i], value + 1);
 			} else {
-				map.put(data[i], new Integer(1));			
+				map.put(data[i], 1);			
 			}
 		}
 
