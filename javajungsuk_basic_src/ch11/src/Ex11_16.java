@@ -19,7 +19,7 @@ class Ex11_16 {
 			System.out.println();
 
 			if(!map.containsKey(id)) {
-				System.out.println("입력하신 id는 존재하지 않습니다." + " 다시 입력해주세요.");
+				System.out.println("입력하신 id는 존재하지 않습니다. 다시 입력해주세요.");
 				continue;
 			} 
 			
