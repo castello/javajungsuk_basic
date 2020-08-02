@@ -19,7 +19,7 @@ class Ex11_18 {
 
 		while(it.hasNext()) {
 			Map.Entry entry = (Map.Entry)it.next();
-			int value = ((Integer)entry.getValue()).intValue();
+			int value = (int)entry.getValue();
 			System.out.println(entry.getKey() + " : " 
                               + printBar('#', value) + " " + value );
 		}
