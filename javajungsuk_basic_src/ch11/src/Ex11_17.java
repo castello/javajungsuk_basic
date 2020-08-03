@@ -3,22 +3,22 @@ import java.util.*;
 class Ex11_17 {
 	public static void main(String[] args) {
 		HashMap map = new HashMap();
-		map.put("±èÀÚ¹Ù", new Integer(90));
-		map.put("±èÀÚ¹Ù", new Integer(100));
-		map.put("ÀÌÀÚ¹Ù", new Integer(100));
-		map.put("°­ÀÚ¹Ù", new Integer(80));
-		map.put("¾ÈÀÚ¹Ù", new Integer(90));
+		map.put("ê¹€ìë°”", 90);
+		map.put("ê¹€ìë°”", 100);
+		map.put("ì´ìë°”", 100);
+		map.put("ê°•ìë°”", 80);
+		map.put("ì•ˆìë°”", 90);
 
 		Set set = map.entrySet();
 		Iterator it = set.iterator();
 
 		while(it.hasNext()) {
 			Map.Entry e = (Map.Entry)it.next();
-			System.out.println("ÀÌ¸§ : "+ e.getKey() + ", Á¡¼ö : " + e.getValue());
+			System.out.println("ì´ë¦„ : "+ e.getKey() + ", ì ìˆ˜ : " + e.getValue());
 		}
 
 		set = map.keySet();
-		System.out.println("Âü°¡ÀÚ ¸í´Ü : " + set);
+		System.out.println("ì°¸ê°€ì ëª…ë‹¨ : " + set);
 
 		Collection values = map.values();
 		it = values.iterator();
@@ -26,13 +26,13 @@ class Ex11_17 {
 		int total = 0;
 		
 		while(it.hasNext()) {
-			Integer i = (Integer)it.next();
-			total += i.intValue();
+			int i = (int)it.next();
+			total += i;
 		}
 
-		System.out.println("ÃÑÁ¡ : " + total);
-		System.out.println("Æò±Õ : " + (float)total/set.size());
-		System.out.println("ÃÖ°íÁ¡¼ö : " + Collections.max(values));
-		System.out.println("ÃÖÀúÁ¡¼ö : " + Collections.min(values));
+		System.out.println("ì´ì  : " + total);
+		System.out.println("í‰ê·  : " + (float)total/set.size());
+		System.out.println("ìµœê³ ì ìˆ˜ : " + Collections.max(values));
+		System.out.println("ìµœì €ì ìˆ˜ : " + Collections.min(values));
 	}
 }
