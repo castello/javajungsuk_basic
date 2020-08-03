@@ -1,6 +1,8 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
-class Ex11_18 {
+class Test0001 {
 	public static void main(String[] args) {
 		String[] data = { "A","K","A","K","D","K","A","K","K","K","Z","D" };
 
@@ -9,9 +11,9 @@ class Ex11_18 {
 		for(int i=0; i < data.length; i++) {
 			if(map.containsKey(data[i])) {
 				int value = (int)map.get(data[i]);
-				map.put(data[i], value + 1); // 기존의 value에 1을 더해서 저장
+				map.put(data[i], value+1);
 			} else {
-				map.put(data[i], 1); // 기존에 없는 경우, value를 1로 저장		
+				map.put(data[i], 1);			
 			}
 		}
 
