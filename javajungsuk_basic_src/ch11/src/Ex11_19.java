@@ -9,36 +9,36 @@ class Ex11_19 {
 		addAll(list, 1,2,3,4,5); 
 		System.out.println(list);
 		
-		rotate(list, 2);  // ¿À¸¥ÂÊÀ¸·Î µÎ Ä­¾¿ ÀÌµ¿ 
+		rotate(list, 2);  // ì˜¤ë¥¸ìª½ìœ¼ë¡œ ë‘ ì¹¸ì”© ì´ë™ 
 		System.out.println(list);
 
-		swap(list, 0, 2); // Ã¹ ¹øÂ°¿Í ¼¼ ¹øÂ°¸¦ ±³È¯(swap)
+		swap(list, 0, 2); // ì²« ë²ˆì§¸ì™€ ì„¸ ë²ˆì§¸ë¥¼ êµí™˜(swap)
 		System.out.println(list);
 
-		shuffle(list);    // ÀúÀåµÈ ¿ä¼ÒÀÇ À§Ä¡¸¦ ÀÓÀÇ·Î º¯°æ 
+		shuffle(list);    // ì €ì¥ëœ ìš”ì†Œì˜ ìœ„ì¹˜ë¥¼ ì„ì˜ë¡œ ë³€ê²½ 
 		System.out.println(list);
 
-		sort(list);       // Á¤·Ä 
+		sort(list);       // ì •ë ¬ 
 		System.out.println(list);
  
-		sort(list, reverseOrder()); // ¿ª¼ø Á¤·Ä reverse(list);¿Í µ¿ÀÏ 
-		System.out.println(list);
-
-		int idx = binarySearch(list, 3);  // 3ÀÌ ÀúÀåµÈ À§Ä¡(index)¸¦ ¹İÈ¯
+		int idx = binarySearch(list, 3);  // 3ì´ ì €ì¥ëœ ìœ„ì¹˜(index)ë¥¼ ë°˜í™˜
 		System.out.println("index of 3 = " + idx);
+		
+		sort(list, reverseOrder()); // ì—­ìˆœ ì •ë ¬ reverse(list);ì™€ ë™ì¼ 
+		System.out.println(list);
 
 		System.out.println("max="+max(list));
 		System.out.println("min="+min(list));
 		System.out.println("min="+max(list, reverseOrder()));
 
-		fill(list, 9); // list¸¦ 9·Î Ã¤¿î´Ù.
+		fill(list, 9); // listë¥¼ 9ë¡œ ì±„ìš´ë‹¤.
 		System.out.println("list="+list);
 
-		// list¿Í °°Àº Å©±âÀÇ »õ·Î¿î list¸¦ »ı¼ºÇÏ°í 2·Î Ã¤¿î´Ù. ´Ü, °á°ú´Â º¯°æºÒ°¡
+		// listì™€ ê°™ì€ í¬ê¸°ì˜ ìƒˆë¡œìš´ listë¥¼ ìƒì„±í•˜ê³  2ë¡œ ì±„ìš´ë‹¤. ë‹¨, ê²°ê³¼ëŠ” ë³€ê²½ë¶ˆê°€
 		List newList = nCopies(list.size(), 2); 
 		System.out.println("newList="+newList);
 
-		System.out.println(disjoint(list, newList)); // °øÅë¿ä¼Ò°¡ ¾øÀ¸¸é true
+		System.out.println(disjoint(list, newList)); // ê³µí†µìš”ì†Œê°€ ì—†ìœ¼ë©´ true
 
 		copy(list, newList); 
 		System.out.println("newList="+newList);
