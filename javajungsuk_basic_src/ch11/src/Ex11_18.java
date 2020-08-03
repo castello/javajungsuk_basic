@@ -22,8 +22,7 @@ class Test0001 {
 		while(it.hasNext()) {
 			Map.Entry entry = (Map.Entry)it.next();
 			int value = (int)entry.getValue();
-			System.out.println(entry.getKey() + " : " 
-                              + printBar('#', value) + " " + value );
+			System.out.println(entry.getKey() + " : " + printBar('#', value) + " " + value );
 		}
 	} // main
 
