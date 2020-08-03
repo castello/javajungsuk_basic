@@ -18,15 +18,15 @@ class Ex11_19 {
 		shuffle(list);    // 저장된 요소의 위치를 임의로 변경 
 		System.out.println(list);
 
+		sort(list, reverseOrder()); // 역순 정렬 reverse(list);와 동일 
+		System.out.println(list);
+		
 		sort(list);       // 정렬 
 		System.out.println(list);
  
 		int idx = binarySearch(list, 3);  // 3이 저장된 위치(index)를 반환
 		System.out.println("index of 3 = " + idx);
 		
-		sort(list, reverseOrder()); // 역순 정렬 reverse(list);와 동일 
-		System.out.println(list);
-
 		System.out.println("max="+max(list));
 		System.out.println("min="+min(list));
 		System.out.println("min="+max(list, reverseOrder()));
