@@ -1,14 +1,14 @@
 import java.lang.annotation.*;
 
 @Deprecated
-@SuppressWarnings("1111") // À¯È¿ÇÏÁö ¾ÊÀº ¾Ö³ÊÅ×ÀÌ¼ÇÀº ¹«½ÃµÈ´Ù.
+@SuppressWarnings("1111") // ìœ íš¨í•˜ì§€ ì•Šì€ ì• ë„ˆí…Œì´ì…˜ì€ ë¬´ì‹œëœë‹¤.
 @TestInfo(testedBy="aaa", testDate=@DateTime(yymmdd="160101",hhmmss="235959"))
 class Ex12_8 {
 	public static void main(String args[]) {
-		// Ex12_8ÀÇ Class°´Ã¼¸¦ ¾ò´Â´Ù.
+		// Ex12_8ì˜ Classê°ì²´ë¥¼ ì–»ëŠ”ë‹¤.
 		Class<Ex12_8> cls = Ex12_8.class;
 
-		TestInfo anno = (TestInfo)cls.getAnnotation(TestInfo.class);
+		TestInfo anno = cls.getAnnotation(TestInfo.class);
 		System.out.println("anno.testedBy()="+anno.testedBy());
 		System.out.println("anno.testDate().yymmdd()=" +anno.testDate().yymmdd());
 		System.out.println("anno.testDate().hhmmss()=" +anno.testDate().hhmmss());
@@ -18,15 +18,15 @@ class Ex12_8 {
 
 		System.out.println();
 
-		// Ex12_8¿¡ Àû¿ëµÈ ¸ğµç ¾Ö³ÊÅ×ÀÌ¼ÇÀ» °¡Á®¿Â´Ù.
+		// Ex12_8ì— ì ìš©ëœ ëª¨ë“  ì• ë„ˆí…Œì´ì…˜ì„ ê°€ì ¸ì˜¨ë‹¤.
 		Annotation[] annoArr = cls.getAnnotations();
 
 		for(Annotation a : annoArr)
 			System.out.println(a);
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }
 
-@Retention(RetentionPolicy.RUNTIME)  // ½ÇÇà ½Ã¿¡ »ç¿ë°¡´ÉÇÏµµ·Ï ÁöÁ¤ 
+@Retention(RetentionPolicy.RUNTIME)  // ì‹¤í–‰ ì‹œì— ì‚¬ìš©ê°€ëŠ¥í•˜ë„ë¡ ì§€ì • 
 @interface TestInfo {
 	int       count()	  	default 1;
 	String    testedBy();
@@ -35,7 +35,7 @@ class Ex12_8 {
 	DateTime  testDate();
 }
 
-@Retention(RetentionPolicy.RUNTIME)  // ½ÇÇà ½Ã¿¡ »ç¿ë°¡´ÉÇÏµµ·Ï ÁöÁ¤
+@Retention(RetentionPolicy.RUNTIME)  // ì‹¤í–‰ ì‹œì— ì‚¬ìš©ê°€ëŠ¥í•˜ë„ë¡ ì§€ì •
 @interface DateTime {
 	String yymmdd();
 	String hhmmss();
