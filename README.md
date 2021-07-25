@@ -22,7 +22,7 @@ http://www.codechobo.com
 <BR>
       
 ## 자바개발도구(JDK8) 설치  
-[Windows] https://github.com/ojdkbuild/ojdkbuild/releases/download/java-11-openjdk-11.0.11.9-1/java-11-openjdk-11.0.11.9-1.windows.ojdkbuild.x86_64.zip  
+[Windows] https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-1.8.0.292-1.b10/java-1.8.0-openjdk-1.8.0.292-1.b10.ojdkbuild.windows.x86_64.zip
 
   
 [Mac] SDKMAN을 이용해서 openJDK설치
