@@ -53,9 +53,16 @@ https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/re
   
 위의 파일을 다운받아서 압축을 풀고, eclipse폴더 내의 eclipse.ini의 중간에 아래의 2줄을 추가
 
+[Windows]
 ```
   -vm  
   jdk설치경로\bin\javaw.exe  
+``` 
+
+[Mac]
+```
+  -vm  
+  jdk설치경로\bin  
 ```  
   <BR>
     
