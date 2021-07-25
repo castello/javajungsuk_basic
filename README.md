@@ -49,4 +49,4 @@ http://www.codechobo.com
 <br>
       
  ## 통합 개발 환경(eclipse) 설치  
-https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-12/R/eclipse-java-2019-12-R-win32-x86_64.zip 
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-12/R/eclipse-java-2019-12-R-win32-x86_64.zip&mirror_id=1273
