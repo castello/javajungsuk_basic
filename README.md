@@ -51,48 +51,7 @@ http://www.codechobo.com
  ## 통합 개발 환경(eclipse) 설치  
 https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-09/R/eclipse-java-2019-09-R-win32-x86_64.zip&mirror_id=1273  
   
-위의 파일을 다운받아서 압축을 풀고, eclipse폴더 내의 eclipse.ini의 중간에 아래의 2줄을 추가
 
-[Windows]
-```
-  -vm  
-  jdk설치경로\bin\javaw.exe  
-``` 
-
-[Mac]
-```
-  -vm  
-  jdk설치경로\bin  
-```  
-  <BR>
-    
-**[eclipse.ini] - Windows**    
--startup  
-plugins/org.eclipse.equinox.launcher_1.5.500.v20190715-1310.jar  
---launcher.library  
-plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.1100.v20190907-0426  
--product  
-org.eclipse.epp.package.java.product  
--showsplash  
-org.eclipse.epp.package.common  
---launcher.defaultAction  
-openFile  
---launcher.defaultAction  
-openFile  
---launcher.appendVmargs  
-**-vm**  
-**c:\jdk8\bin\javaw.exe**      
--vmargs  
--Dosgi.requiredJavaVersion=1.8  
--Dosgi.instance.area.default=@user.home/eclipse-workspace  
--XX:+UseG1GC  
--XX:+UseStringDeduplication  
---add-modules=ALL-SYSTEM  
--Dosgi.requiredJavaVersion=1.8  
--Dosgi.dataAreaRequiresExplicitInit=true  
--Xms256m  
--Xmx1024m  
---add-modules=ALL-SYSTEM  
     
     
 
