@@ -66,7 +66,7 @@ https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/re
 ```  
   <BR>
     
-**[eclipse.ini]**    
+**[eclipse.ini] - Windows**    
 -startup  
 plugins/org.eclipse.equinox.launcher_1.5.500.v20190715-1310.jar  
 --launcher.library  
