@@ -9,7 +9,7 @@
 
 <BR>
   
-## 무료강좌 - 최고의 자바강의를 무료로
+## 무료강의 - 최고의 자바강의를 무료로
 https://youtube.com/playlist?list=PLW2UjW795-f6xWA2_MUhEVgPauhGl3xIp  
 
   <BR>  
