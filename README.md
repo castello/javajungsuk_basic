@@ -77,11 +77,11 @@ org.eclipse.epp.package.java.product
 org.eclipse.epp.package.common  
 --launcher.defaultAction  
 openFile  
-**-vm**  
-**c:\jdk8\bin\javaw.exe**  
 --launcher.defaultAction  
 openFile  
 --launcher.appendVmargs  
+**-vm**  
+**c:\jdk8\bin\javaw.exe**      
 -vmargs  
 -Dosgi.requiredJavaVersion=1.8  
 -Dosgi.instance.area.default=@user.home/eclipse-workspace  
