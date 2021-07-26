@@ -55,7 +55,39 @@ https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/re
   [Mac]
 https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-09/R/eclipse-java-2019-09-R-macosx-cocoa-x86_64.dmg&mirror_id=1273  
     
-    
+  **[eclipse.ini]**   
+  -startup  
+../Eclipse/plugins/org.eclipse.equinox.launcher_1.5.500.v20190715-1310.jar  
+--launcher.library  
+../Eclipse/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.1100.v20190907-0426  
+-product  
+org.eclipse.epp.package.java.product  
+-showsplash  
+org.eclipse.epp.package.common  
+--launcher.defaultAction  
+openFile  
+--launcher.defaultAction  
+openFile  
+--launcher.appendVmargs  
+**-vm**  
+**/Users/seongnamkung/.sdkman/candidates/java/8.0.292-zulu/bin**  
+-vmargs  
+-Dosgi.requiredJavaVersion=1.8  
+-Dosgi.instance.area.default=@user.home/eclipse-workspace  
+-XX:+UseG1GC  
+-XX:+UseStringDeduplication  
+--add-modules=ALL-SYSTEM  
+-XstartOnFirstThread  
+-Dorg.eclipse.swt.internal.carbon.smallFonts  
+-Dosgi.requiredJavaVersion=1.8  
+-Dosgi.dataAreaRequiresExplicitInit=true  
+-Xms256m  
+-Xmx1024m  
+--add-modules=ALL-SYSTEM  
+-Xdock:icon=../Resources/Eclipse.icns  
+-XstartOnFirstThread  
+-Dorg.eclipse.swt.internal.carbon.smallFonts  
+
 
   
   
