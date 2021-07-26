@@ -38,7 +38,7 @@ http://www.codechobo.com
    ```
     $ sdk version  <--- sdkman 버전출력  
     $ sdk list java  <-- 설치 가능 & 설치된 JDK목록  
-    $ sdk install java Identifier <--- 지정된 JDK설치(Identifier대신 8.292.10.1-amzn와 같이 원하는 종류와 버전 지정)  
+    $ sdk install Identifier <--- 지정된 JDK설치(Identifier대신 8.292.10.1-amzn와 같이 원하는 종류와 버전 지정)  
     $ sdk current java <--- 현재 사용중인 java버전 출력  
     $ sdk use java 버전 <--- 현재 사용중인 java버전을 지정된 버젼으로 변경  
     $ echo $JAVA_HOME  <--- JAVA_HOME으로 지정된 경로 출력  
@@ -49,9 +49,11 @@ http://www.codechobo.com
 <br>
       
  ## 통합 개발 환경(eclipse) 설치  
+  [Windows]
 https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-09/R/eclipse-java-2019-09-R-win32-x86_64.zip&mirror_id=1273  
   
-
+  [Mac]
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-09/R/eclipse-java-2019-09-R-macosx-cocoa-x86_64.dmg&mirror_id=1273  
     
     
 
