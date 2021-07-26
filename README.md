@@ -38,9 +38,9 @@ http://www.codechobo.com
    ```
     $ sdk version  <--- sdkman 버전출력  
     $ sdk list java  <-- 설치 가능 & 설치된 JDK목록  
-    $ sdk install java Identifier <--- 지정된 JDK설치(Identifier대신 8.292.10.1-amzn와 같이 원하는 종류와 버전 지정)  
+    $ sdk install java 8.0.292-zulu <--- 지정된 JDK설치(원하는 종류와 버전 지정)  
     $ sdk current java <--- 현재 사용중인 java버전 출력  
-    $ sdk use java 버전 <--- 현재 사용중인 java버전을 지정된 버젼으로 변경  
+    $ sdk use java 8.0.292-zulu <--- 현재 사용중인 java버전을 지정된 버젼으로 변경  
     $ echo $JAVA_HOME  <--- JAVA_HOME으로 지정된 경로 출력  
     $ sdk uninstall java 버전  <--- 지정된 버전의 자바를 uninstall  
    ```
