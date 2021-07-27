@@ -39,10 +39,10 @@ http://www.codechobo.com
     $ sdk version  <--- sdkman 버전출력  
     $ sdk list java  <-- 설치 가능 & 설치된 JDK목록  
     $ sdk install java 8.0.292-zulu <--- 지정된 JDK설치(원하는 종류와 버전 지정)  
+    $ sdk default java 8.0.292-zulu <--- 사용할 java버전을 변경(모든 쉘에 적용)
+    $ sdk use java 8.0.292-zulu <--- 사용할 java버전을 변경(현재 쉘에만 적용)  
     $ sdk current java <--- 현재 사용중인 java버전 출력  
-    $ sdk use java 8.0.292-zulu <--- 현재 사용중인 java버전을 지정된 버젼으로 변경  
-    $ echo $JAVA_HOME  <--- JAVA_HOME으로 지정된 경로 출력  
-    $ sdk uninstall java 버전  <--- 지정된 버전의 자바를 uninstall  
+    $ echo $JAVA_HOME  <--- JAVA_HOME으로 지정된 경로 출력
    ```
    **[참고]** openJDK버전별 다운로드 - https://jdk.java.net/archive/
 <br>
